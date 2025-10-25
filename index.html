@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/pencil.png">
+</head>
+<body>
+    <main class="container">
+        <h1 id="main-heading">Notizen</h1>
+
+        <section class="note-editor">
+            <label for="note-input" class="visually-hidden">Neue Notiz</label>
+            <textarea id="note-input" rows="6" placeholder="Schreibe deine Notiz hier..."></textarea>
+            <div class="editor-actions">
+                <button id="save-note">Speichern</button>
+                <button id="clear-input" type="button">Löschen</button>
+                <button id="clear-all" type="button" class="destructive">Alle löschen</button>
+            </div>
+        </section>
+
+        <section class="notes-list">
+            <h2>Gespeicherte Notizen</h2>
+            <div id="notes-list" aria-live="polite">
+                <!-- Notizen werden hier gerendert -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
